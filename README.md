@@ -3,7 +3,7 @@
 ```
 - go mod vendor
 - go mod tidy
-- cp .env.example .envs
+- cp .env.example .env
 ```
 
 
@@ -27,7 +27,7 @@ Add:
 ```
 <VirtualHost *:80>
 	ServerName mvc.sdslabs.local
-	ServerAdmin rohith@gmail.com
+	ServerAdmin youremailid
 	ProxyPreserveHost On
 	ProxyPass / http://127.0.0.1:8000/
 	ProxyPassReverse / http://127.0.0.1:8000/
